@@ -2,8 +2,16 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const flightSchema = new Schema({
-  airline: String,
-  flightNo: Number,
+  airline: {
+    type: String,
+    enum: ['American', 'Southwest', 'United']
+  },  
+  flightNo: {
+    type: Number,
+    required: true,
+    min: 10,
+    max: 9999
+  },
   departs: {
     type: Date,
     //if empty string - may need to refactor
