@@ -4,7 +4,13 @@ const Schema = mongoose.Schema;
 const flightSchema = new Schema({
   airline: String,
   flightNo: Number,
-  departs: Date
+  departs: {
+    type: Date,
+    //if empty string - may need to refactor
+    default: new Date(new Date().setFullYear(new Date().getFullYear() +1))
+  }
+}, {
+  timestaps: true
 });
 
 // Compile Schema into a Model and Export
