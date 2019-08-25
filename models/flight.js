@@ -25,4 +25,5 @@ const flightSchema = new Schema({
 // First Argument is name of model
 // Second Argument is name of Schema you are compiling into Model
 
-module.exports = mongoose.model('Flight', flightSchema);
+const Flight = mongoose.model('Flight', flightSchema);
+module.export = Flight;
