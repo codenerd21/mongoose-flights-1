@@ -14,7 +14,8 @@
         <tr>
           <th>Airline:</th>
           <th>Flight No:</th>
-          <th>Departs:</th>
+          <th>Departure Date:</th>
+          <th>Departure Time:</th>
         </tr>
       </thead>
       <tbody>
@@ -22,7 +23,8 @@
           <tr>
             <td><%= air.airline %></td>
             <td><%= air.flightNo %></td>
-            <td><%= air.departs %></td>
+            <td><%= new Date(air.departs).toDateString() %></td>
+            <td><%= air.time %></td>
           </tr>  
           <% }) %>
       </tbody>
