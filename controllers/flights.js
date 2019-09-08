@@ -1,7 +1,12 @@
-var Flights = require(../models/flight);
+var Flight = require('../models/flight');
 
 module.exports = {
-  new: newFlight
+  new: newFlight,
+  create
+};
+
+function create(req, res) {
+
 };
 
 function newFlight(req, res) {
