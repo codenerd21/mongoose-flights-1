@@ -8,11 +8,24 @@
   <title>Mongoose Flights</title>
 </head>
 <body>
-  <h2>Schedule of Flight Departures</h2>
-  <% flights.forEach(function(air) { %> 
-    <h3>Airline: <%= air.airline %></h3>
-    <h3>Flight #: <%= air.flightNo %></h3>
-    <h3>Departure Date: <%= air.departs %></h3>
-  <% }) %>
+  <h2>Schedule of Flights</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Airline:</th>
+          <th>Flight No:</th>
+          <th>Departs:</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% flights.forEach(function(air) { %> 
+          <tr>
+            <td><%= air.airline %></td>
+            <td><%= air.flightNo %></td>
+            <td><%= air.departs %></td>
+          </tr>  
+          <% }) %>
+      </tbody>
+    </table>
 </body>
 </html>
