@@ -1,8 +1,64 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+  background: url("https://i.imgur.com/97d76Ec.jpg") no-repeat center center fixed;
+  background-size: 100% 100%;
+  font-family: "Lucinda Grande", Arial, Helvetica, sans-serif;
+  font-weight: 300;
 }
 
-a {
-  color: #00B7FF;
+img {
+  border-radius: 50%;
+  width: 200px;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  background: #55d6aa;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 55px;
+  font-weight: 600;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 26px;
+}
+
+nav a:hover {
+  color: white;
+}
+
+#title-caption {
+  text-align: center;
 }
